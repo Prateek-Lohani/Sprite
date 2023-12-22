@@ -7,6 +7,7 @@
     <title>Sprite</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="shortcut icon" href="./favico.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -46,15 +47,15 @@
             <video src="./sprite-wsc-teaser-desktop.mp4" class="w-full h-full object-cover" autoplay muted></video>
         </section>
         <section class="w-full bg-[#AD1D40] flex justify-center items-center text-white">
-            <div class="form py-4 px-6 w-full md:w-[35%] h-[80%]">
+            <form class="form py-4 px-6 w-full md:w-[35%] h-[80%]">
                 <h1 class="text-2xl md:text-3xl mb-6 mt-6">The Season To Spice Things Up</h1>
                 <p class="text-xs md:text-sm w-full mb-8">Sign up to be the first to know when the official flavor of the holidays hits shelves.<br/> Sprite Winter Spiced Cranberry and Winter Spiced Cranberry Zero Sugar will be here soon.</p>
                 <label for="email" class="text-center">Email Address*</label>
-                <input type="email" class="block border-solid bg-slate-300 mt-4 w-full md:w-[25vw] h-[6vh] rounded" name="email" id="email" placeholder="">
-                <input type="checkbox" class="inline-block text-center mt-6"><p class="inline ml-2 text-xs md:text-sm">I agree to The Coca-Cola® Company's Terms of Use and Privacy Policy*</p>
+                <input type="email" required class="block border-solid bg-slate-300 text-[black] mt-4 w-full md:w-[25vw] h-[6vh] rounded" name="email" id="email" placeholder="">
+                <input type="checkbox" id="checkbox" class="inline-block text-center mt-6" required><label for="checkbox" class="inline ml-2 text-xs md:text-sm">I agree to The Coca-Cola® Company's Terms of Use and Privacy Policy*</label>
                 <p class="mt-6 text-xs md:text-sm">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
-                <button class="mt-8 w-full md:w-[36%] h-12 bg-[#068B49] rounded">JOIN THE LIST</button>
-            </div>
+                <button type="submit" class="button mt-8 w-full md:w-[36%] h-12 bg-[#068B49] rounded">JOIN THE LIST</button>
+            </form>
         </section>
         <section class="page3 w-full h-[60vh] md:py-10 px-4 md:px-40 flex flex-col md:flex-row gap-4">
             <p class="pt-8 w-full md:w-[50%] text-[#068B49] text-2xl md:text-7xl leading-tight">Made with clear
@@ -67,7 +68,8 @@
                 <img class="w-1/5 h-1/5 object-cover" src="./same-sprite.png" alt="">
                 <div class="mt-4 md:mt-0">
                     <h3 class="text-base md:text-xl mb-2 md:mb-4 text-white">Contact us</h3>
-                    <i class="text-2xl md:text-[1.5vw] ri-facebook-circle-fill hover:cursor-pointer hover:text-white"></i>
+                    <i  class="text-2xl md:text-[1.5vw] ri-facebook-circle-fill hover:cursor-pointer hover:text-white">
+                    </i>
                     <i class="text-2xl md:text-[1.5vw] ri-twitter-x-fill hover:cursor-pointer hover:text-white"></i>
                     <i class="text-2xl md:text-[1.5vw] ri-youtube-fill hover:cursor-pointer hover:text-white"></i>
                     <i class="text-2xl md:text-[1.5vw] ri-instagram-fill hover:cursor-pointer hover:text-white"></i>
@@ -89,6 +91,7 @@
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <script src="./script.js"></script>
 </body>
 </html>
