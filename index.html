@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="font-sans">
+    <div class="loader h-full w-full absolute overflow-hidden">
+        <div class="relative top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-20">
+            <img class="loadingimg w-full" src="./icons8-soda-can-32.png" alt="">
+            <p>Loading . . .</p>
+        </div>
+    </div>
     <div id="main" class="relative w-full min-h-screen pt-[.1px]">
         <nav class="fixed w-full h-20 bg-[#009B4E] py-3 px-6 flex justify-between items-center">
             <div class="mobile-nav md:hidden"><img src="./same-sprite.png" class="w-25 h-10 mr-5" alt=""></div>
@@ -28,9 +34,13 @@
                 <i class="ri-instagram-fill hover:cursor-pointer hover:text-white"></i>
                 <i class="ri-user-fill ml-4 hover:cursor-pointer hover:text-[#E11A5D]"></i>
             </div>
+            <div class="md:hidden flex gap-5">
+                <i class="ri-user-fill text-2xl hover:cursor-pointer hover:text-[#E11A5D]"></i>
+            <i class="ri-menu-line text-2xl"></i>
+            </div>
         </nav>
         <section class="md:hidden mobvid w-full h-[80vh] pt-20">
-            <video src="./sprite-wsc-teaser-mobile.mp4" class="w-full h-full object-cover" autoplay muted></video>
+            <video src="./sprite-wsc-teaser-mobile.mp4" class="w-full h-full object-cover" loop autoplay muted></video>
         </section>
         <section class="hidden xs:hidden md:block video-hero pt-20">
             <video src="./sprite-wsc-teaser-desktop.mp4" class="w-full h-full object-cover" autoplay muted></video>
@@ -78,5 +88,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./script.js"></script>
 </body>
 </html>
