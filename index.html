@@ -13,14 +13,15 @@
 <body class="font-sans">
     <div id="main" class="relative w-full min-h-screen pt-[.1px]">
         <nav class="fixed w-full h-20 bg-[#009B4E] py-3 px-6 flex justify-between items-center">
-            <div class="nav-left flex items-center gap-6">
+            <div class="mobile-nav md:hidden"><img src="./same-sprite.png" class="w-25 h-10 mr-5" alt=""></div>
+            <div class="hidden nav-left md:flex items-center gap-6">
                 <img src="./same-sprite.png" class="w-12 h-6 mr-5" alt="">
                 <h2 class="hover:cursor-pointer hover:text-white hover:underline underline-offset-8">Products</h2>
                 <h2 class="hover:cursor-pointer hover:text-white hover:underline underline-offset-8">Sprite Zero Sugar</h2>
                 <h2 class="hover:cursor-pointer hover:text-white hover:underline underline-offset-8">The Creators</h2>
                 <h2 class="hover:cursor-pointer hover:text-white hover:underline underline-offset-8">Buy Now</h2>
             </div>
-            <div class="flex nav-right justify-center items-center gap-6 text-2xl">
+            <div class="hidden md:flex nav-right justify-center items-center gap-6 text-2xl">
                 <i class="ri-facebook-circle-fill hover:cursor-pointer hover:text-white"></i>
                 <i class="ri-twitter-x-fill hover:cursor-pointer hover:text-white"></i>
                 <i class="ri-youtube-fill hover:cursor-pointer hover:text-white"></i>
@@ -28,7 +29,10 @@
                 <i class="ri-user-fill ml-4 hover:cursor-pointer hover:text-[#E11A5D]"></i>
             </div>
         </nav>
-        <section class="video-hero pt-20">
+        <section class="md:hidden mobvid w-full h-[80vh] pt-20">
+            <video src="./sprite-wsc-teaser-mobile.mp4" class="w-full h-full object-cover" autoplay muted></video>
+        </section>
+        <section class="hidden xs:hidden md:block video-hero pt-20">
             <video src="./sprite-wsc-teaser-desktop.mp4" class="w-full h-full object-cover" autoplay muted></video>
         </section>
         <section class="w-full bg-[#AD1D40] flex justify-center items-center text-white">
