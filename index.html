@@ -1,106 +1,78 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sprite</title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="./favico.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="main" class="relative w-full h-full pt-[0.1px]">
-        <nav class="fixed w-full h-[4.5vmax] bg-[#009B4E] py-3 px-6 flex justify-between">
-            <div class="nav-left flex justify-center items-center gap-6">
-                <img src="./same-sprite.png" class="w-[5vw] h-[2vw] mr-5" alt="">
+<body class="font-sans">
+    <div id="main" class="relative w-full min-h-screen pt-[.1px]">
+        <nav class="fixed w-full h-20 bg-[#009B4E] py-3 px-6 flex justify-between items-center">
+            <div class="nav-left flex items-center gap-6">
+                <img src="./same-sprite.png" class="w-12 h-6 mr-5" alt="">
                 <h2 class="hover:cursor-pointer hover:text-white hover:underline underline-offset-8">Products</h2>
                 <h2 class="hover:cursor-pointer hover:text-white hover:underline underline-offset-8">Sprite Zero Sugar</h2>
                 <h2 class="hover:cursor-pointer hover:text-white hover:underline underline-offset-8">The Creators</h2>
                 <h2 class="hover:cursor-pointer hover:text-white hover:underline underline-offset-8">Buy Now</h2>
             </div>
-            <div class=" nav-right flex justify-center items-center gap-6 text-2xl">
+            <div class="flex nav-right justify-center items-center gap-6 text-2xl">
                 <i class="ri-facebook-circle-fill hover:cursor-pointer hover:text-white"></i>
                 <i class="ri-twitter-x-fill hover:cursor-pointer hover:text-white"></i>
                 <i class="ri-youtube-fill hover:cursor-pointer hover:text-white"></i>
                 <i class="ri-instagram-fill hover:cursor-pointer hover:text-white"></i>
-                <i class="ri-user-fill ml-10 hover:cursor-pointer hover:text-[#E11A5D]"></i>
+                <i class="ri-user-fill ml-4 hover:cursor-pointer hover:text-[#E11A5D]"></i>
             </div>
         </nav>
-        <section class="video-hero mt-[4.5vmax]">
-<video src="./sprite-wsc-teaser-desktop.mp4" class="w-full h-full object-cover" autoplay muted></video>
+        <section class="video-hero pt-20">
+            <video src="./sprite-wsc-teaser-desktop.mp4" class="w-full h-full object-cover" autoplay muted></video>
         </section>
-        <section class="w-full h-[100vh] bg-[#AD1D40] flex justify-center items-center text-[white]">
-            <div class="form py-4 px-6 w-[35%] h-[80%]">
-                <h1 class=" text-3xl mb-6 mt-6">The Season To Spice Things Up</h1>
-                <p class="text-xs w-full mb-10">Sign up to be the first to know when the official flavor of the holidays hits shelves.<br/> Sprite Winter Spiced Cranberry and Winter Spiced Cranberry Zero Sugar will be here soon.</p>
-                <label for="email" class="left-50 text-center">Email Address*</label>
-                <input type="email" class=" block border-solid bg-slate-300 mt-4 w-[25vw] h-[6vh] rounded" name="email" id="email" placeholder="">
-                <input type="checkbox" class="inline-block text-center mt-6"><p class="inline ml-2">I agree to The Coca-Cola® Company's Terms of Use and Privacy Policy*</p>
-                <p class=" mt-8">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
-                <button class="mt-14 w-[36%] h-16 bg-[#068B49] rounded relative left-[50%] translate-x-[-50%]">JOIN THE LIST</button>
+        <section class="w-full bg-[#AD1D40] flex justify-center items-center text-white">
+            <div class="form py-4 px-6 w-full md:w-[35%] h-[80%]">
+                <h1 class="text-2xl md:text-3xl mb-6 mt-6">The Season To Spice Things Up</h1>
+                <p class="text-xs md:text-sm w-full mb-8">Sign up to be the first to know when the official flavor of the holidays hits shelves.<br/> Sprite Winter Spiced Cranberry and Winter Spiced Cranberry Zero Sugar will be here soon.</p>
+                <label for="email" class="text-center">Email Address*</label>
+                <input type="email" class="block border-solid bg-slate-300 mt-4 w-full md:w-[25vw] h-[6vh] rounded" name="email" id="email" placeholder="">
+                <input type="checkbox" class="inline-block text-center mt-6"><p class="inline ml-2 text-xs md:text-sm">I agree to The Coca-Cola® Company's Terms of Use and Privacy Policy*</p>
+                <p class="mt-6 text-xs md:text-sm">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+                <button class="mt-8 w-full md:w-[36%] h-12 bg-[#068B49] rounded">JOIN THE LIST</button>
             </div>
         </section>
-        <section class="page3 w-full h-[60vh] py-10 px-40 flex gap-4">
-            <p class="pt-8 w-[50%] text-[#068B49] text-7xl leading-tight">Made with clear
+        <section class="page3 w-full h-[60vh] md:py-10 px-4 md:px-40 flex flex-col md:flex-row gap-4">
+            <p class="pt-8 w-full md:w-[50%] text-[#068B49] text-2xl md:text-7xl leading-tight">Made with clear
                 plastic to help this
                 bottle be re-made. </p>
-                <img class="w-[50%]  h-[90%] fit-cover" src="./all-clear-from-here.png" alt="">
+            <img class="w-full md:w-[50%] h-[90%] object-cover" src="./all-clear-from-here.png" alt="">
         </section>
-        <footer class="w-full p-6 h-[45vh] bg-[#009B4E]">
-            <div class="wrapper flex justify-around">
-            <img class="w-[16%] h-[16%] fit-cover" src="./same-sprite.png" alt="">
-            <div class="">
-                <h3 class="text-xl mb-4 text-[white]">Contact us</h3>
-                <i class="text-[1.5vw] ri-facebook-circle-fill hover:cursor-pointer hover:text-white"></i>
-                <i class="text-[1.5vw] ri-twitter-x-fill hover:cursor-pointer hover:text-white"></i>
-                <i class="text-[1.5vw] ri-youtube-fill hover:cursor-pointer hover:text-white"></i>
-                <i class="text-[1.5vw] ri-instagram-fill hover:cursor-pointer hover:text-white"></i>
+        <footer class="w-full p-6 md:h-[45vh] bg-[#009B4E]">
+            <div class="wrapper flex flex-col md:flex-row justify-around items-center">
+                <img class="w-1/5 h-1/5 object-cover" src="./same-sprite.png" alt="">
+                <div class="mt-4 md:mt-0">
+                    <h3 class="text-base md:text-xl mb-2 md:mb-4 text-white">Contact us</h3>
+                    <i class="text-2xl md:text-[1.5vw] ri-facebook-circle-fill hover:cursor-pointer hover:text-white"></i>
+                    <i class="text-2xl md:text-[1.5vw] ri-twitter-x-fill hover:cursor-pointer hover:text-white"></i>
+                    <i class="text-2xl md:text-[1.5vw] ri-youtube-fill hover:cursor-pointer hover:text-white"></i>
+                    <i class="text-2xl md:text-[1.5vw] ri-instagram-fill hover:cursor-pointer hover:text-white"></i>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <h1 class="text-base md:text-xl mb-2 md:mb-4 text-white">PRODUCTS</h1>
+                    <h3>SPRITE</h3>
+                    <h3>SPRITE ZERO SUGAR</h3>
+                    <h3>SPRITE LYMONADE</h3>
+                    <h3>SPRITE CHERRY</h3>
+                    <h3>SPRITE TROPICAL MIX</h3>
+                    <h3>SPRITE WINTER SPICED CRANBERRY</h3>
+                    <h3>SPRITE WINTER SPICED CRANBERRY ZERO SUGAR</h3>
+                </div>
             </div>
-            <div>
-                <h1 class="text-xl mb-4 text-[white]">PRODUCTS</h1>
-                <h3>SPRITE</h3>
-                <h3>SPRITE ZERO SUGAR</h3>
-                <h3>SPRITE LYMONADE</h3>
-                <h3>SPRITE CHERRY</h3>
-                <h3>SPRITE TROPICAL MIX</h3>
-                <h3>SPRITE WINTER SPICED CRANBERRY</h3>
-                <h3>SPRITE WINTER SPICED CRANBERRY ZERO SUGAR</h3>
+            <div class="text-center mt-8">
+                <p class="text-xs md:text-base text-white">© 2023 The Coca-Cola Company. All Rights reserved</p>
             </div>
-        </div>
-        <div>
-      <p class="text-center text-[white] mt-10">    © 2023 The Coca-Cola Company. All Rights reserved</p>
-        </div>
         </footer>
     </div>
-
-
-
-<!-- <div id="main">
-    <div id="nav">
-        <div class="navleft">
-            <img src="./same-sprite.png" alt="">
-            <h2>Products</h2>
-            <h2>Sprite Zero Sugar</h2>
-            <h2>The Creators</h2>
-            <h2>Buy Now</h2>
-        </div>
-        <div class="navright">
-            <i class="ri-facebook-circle-fill"></i>
-            <i class="ri-twitter-x-fill"></i>
-            <i class="ri-youtube-fill"></i>
-            <i class="ri-instagram-fill"></i>
-            <i class="ri-user-fill"></i>
-        </div>
-    </div>
-    <div id="videocontainer">
-        <video src="./sprite-wsc-teaser-desktop.mp4"></video>
-    </div>
-    <div id="page2"></div>
-</div>
-     -->
 </body>
 </html>
